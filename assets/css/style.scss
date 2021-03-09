@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+	.header-title {
+		h1 {
+
+		}
+		h2 {
+
+		}
+	}
+	.header-menu {
+		ul {
+			li {
+				text-decoration: none;
+				a {
+					cursor: pointer;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+.home-button {
+	width: 20px;
+}

@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.header .header-menu ul li {
+  text-decoration: none; }
+  .header .header-menu ul li a {
+    cursor: pointer;
+    text-decoration: none; }
+
+.home-button {
+  width: 20px; }
+
+/*# sourceMappingURL=style.css.map */
