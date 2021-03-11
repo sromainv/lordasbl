@@ -3,28 +3,42 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.header {
-	.header-title {
-		h1 {
-
-		}
-		h2 {
-
-		}
-	}
-	.header-menu {
-		ul {
-			li {
-				text-decoration: none;
-				a {
-					cursor: pointer;
-					text-decoration: none;
-				}
-			}
-		}
-	}
+body {
+  font-family: 'Open Sans', sans-serif;
 }
-.home-button {
-	width: 20px;
+h1 { font-size: 48px; }
+h2 { font-size: 36px; }
+h3 { font-size: 24px; }
+p { font-size: 18px; }
+
+/*
+Primary color : #F98866
+Secondary color : #FF420E
+*/
+
+
+/* --- HEADER --- */
+.header {
+  .logo {
+    width: 150px;
+  }
+  .title {
+    h1,h2 {
+      color: black;
+    }
+  }
+}
+
+
+/* --- MENU --- */
+.menu {
+  ul {
+    li {
+      list-style-type: none;
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
 }
