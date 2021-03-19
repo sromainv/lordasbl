@@ -23,16 +23,49 @@ Primary color : #F98866
 Secondary color : #FF420E
 */
 /* --- HEADER --- */
-.header .logo {
-  width: 150px; }
-.header .title h1, .header .title h2 {
-  color: black; }
+header {
+  display: flex;
+  justify-content: center;
+  position: relative; }
+
+.header-img {
+  position: absolute;
+  width: 1000px;
+  height: 300px; }
+
+.header-img-filter {
+  position: absolute;
+  width: 1000px;
+  height: 300px; }
+
+.header-content {
+  position: absolute;
+  height: 300px;
+  display: flex;
+  align-items: center; }
+  .header-content .logo {
+    width: 150px;
+    margin-right: 5vw; }
+  .header-content .title {
+    margin-left: 5vw; }
+    .header-content .title h1, .header-content .title h2 {
+      color: black; }
 
 /* --- MENU --- */
-.menu ul li {
-  list-style-type: none; }
-  .menu ul li a {
-    color: black;
-    text-decoration: none; }
+.menu {
+  display: block;
+  margin: 0 auto;
+  margin-top: 300px;
+  max-width: 1000px;
+  border: 1px solid black; }
+  .menu ul {
+    display: flex;
+    justify-content: space-around; }
+    .menu ul li {
+      border: 1px solid grey;
+      list-style-type: none; }
+      .menu ul li a {
+        color: black;
+        text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

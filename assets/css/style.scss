@@ -18,13 +18,39 @@ Secondary color : #FF420E
 
 
 /* --- HEADER --- */
-.header {
+header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.header-img {
+  position: absolute;
+  width: 1000px;
+  height: 300px;
+  //z-index: 10;
+}
+.header-img-filter {
+  position: absolute;
+  width: 1000px;
+  height: 300px;
+}
+.header-content {
+  position: absolute;
+  height: 300px;
+  display: flex;
+  align-items: center;
   .logo {
     width: 150px;
+    margin-right: 5vw;
   }
   .title {
+    margin-left: 5vw;
     h1,h2 {
       color: black;
+    }
+    h1 {
+    }
+    h2 {
     }
   }
 }
@@ -32,8 +58,16 @@ Secondary color : #FF420E
 
 /* --- MENU --- */
 .menu {
+  display: block;
+  margin: 0 auto;
+  margin-top: 300px;
+  max-width: 1000px;
+  border: 1px solid black;
   ul {
+    display: flex;
+    justify-content: space-around;
     li {
+      border: 1px solid grey;
       list-style-type: none;
       a {
         color: black;
