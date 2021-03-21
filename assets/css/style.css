@@ -87,8 +87,7 @@ header {
           font-size: 20px; }
 
 #selected-tab {
-  border-bottom: 3px solid rgba(255, 66, 14, 0.8);
-  margin-bottom: -3px; }
+  box-shadow: 0 3px 0 0 rgba(255, 66, 14, 0.8); }
 
 .content {
   display: block;
