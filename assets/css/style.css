@@ -96,6 +96,12 @@ header {
   height: 500px; }
 
 @media screen and (max-width: 750px) {
+  h1 {
+    font-size: 32px; }
+
+  h2 {
+    font-size: 24px; }
+
   header {
     width: 800px;
     height: 230px;
@@ -112,9 +118,9 @@ header {
   .header-content {
     height: 230px;
     left: 50%;
-    margin-left: -250px; }
+    margin-left: -200px; }
     .header-content .logo {
-      height: 190px;
+      height: 180px;
       margin-top: 0;
       margin-right: 1vw; }
     .header-content .title {
@@ -127,7 +133,7 @@ header {
     .menu ul {
       flex-direction: column; }
       .menu ul li a p {
-        font-size: 24px; } }
+        font-size: 22px; } }
 @media screen and (max-width: 1000px) and (min-width: 751px) {
   .header-content {
     left: 50%;
