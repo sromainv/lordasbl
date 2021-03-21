@@ -21,37 +21,42 @@ Secondary color : #FF420E or rgba(255, 66, 14, 1)
 
 // --- HEADER ---
 header {
-  display: flex;
-  justify-content: center;
+  z-index: -1;
   position: relative;
+  height: 310px;
+  width: 1000px;
+  top: 0;
+  left: 50%;
+  margin-left: -500px;
 }
 .header-img {
-  z-index: 10;
+  z-index: 1;
   position: absolute;
   width: 1000px;
-  height: 300px;
+  height: 310px;
 }
 .header-img-filter {
-  z-index: 11;
+  z-index: 2;
   position: absolute;
   width: 1000px;
-  height: 300px;
+  height: 310px;
   background-color: rgba(40, 120, 117, 0.3);
 }
 .header-content {
-  z-index: 12;
+  z-index: 3;
   position: absolute;
-  height: 300px;
+  height: 310px;
   display: flex;
   align-items: center;
   .logo {
     height: 200px;
     margin-right: 360px;
+    margin-left: 20px;
     margin-top: 70px;
   }
   .title {
     text-align: right;
-    margin-top: 120px;
+    margin-top: 130px;
     margin-left: 145px;
     margin-right: 1vw;
     h1,h2 {
@@ -65,10 +70,9 @@ header {
 
 // --- MENU ---
 .menu {
-  z-index: 13;
+  z-index: 4;
   display: block;
   margin: 0 auto;
-  margin-top: 300px;
   max-width: 1000px;
   background-color: rgba(249, 136, 102, 0.85);
   ul {
@@ -78,8 +82,7 @@ header {
     align-items: center;
     li {
       list-style-type: none;
-      padding-left: 5px;
-      padding-right: 5px;
+
       a {
         color: black;
         text-decoration: none;
@@ -92,7 +95,8 @@ header {
   }
 }
 #selected-tab {
-  border-bottom: 3px solid rgba(255, 66, 14, 0.85);
+  padding-top: 3px;
+  border-bottom: 3px solid rgba(255, 66, 14, 0.8);
 }
 
 // --- CONTENT ---
@@ -108,20 +112,28 @@ header {
 
 
 
-// SMALL SCREENS (<750)
+// Small screens (<750)
 @media screen and (max-width: 750px) {
+  header {
+    width: 800px;
+    height: 230px;
+    margin-left: -400px;
+  }
   .header-img {
     width: 800px;
-    height: 200px;
+    height: 230px;
   }
   .header-img-filter {
-    height: 200px;
+    width: 800px;
+    height: 230px;
   }
   .header-content {
-    height: 200px;
+    height: 230px;
+    left: 50%;
+    margin-left: -250px;
     .logo {
-      margin-top: 0;
       height: 190px;
+      margin-top: 0;
       margin-right: 1vw;
     }
     .title {
@@ -131,7 +143,7 @@ header {
     }
   }
   .menu {
-    margin-top: 195px;
+    max-width: 800px;
     ul {
       flex-direction: column;
       li a p {
@@ -140,15 +152,20 @@ header {
     }
   }
 }
-
-// Smooth transition between 1000px & 750px
+// Transition (1000> & <750)
 @media screen and (max-width: 1000px) and (min-width: 751px) {
   .header-content {
+    left: 50%;
+    margin-left: -250px;
     .logo {
-      margin-right: 20vw;
+      height: 280px;
+      margin-top: 0;
+      margin-right: 1vw;
     }
     .title {
-      margin-left: 20vw;
+      text-align: left;
+      margin-top: 0;
+      margin-left: 1vw;
     }
   }
 }
