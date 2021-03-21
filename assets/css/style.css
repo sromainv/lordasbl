@@ -23,7 +23,6 @@ p {
 Primary color : #F98866 or rgba(249, 136, 102, 1)
 Secondary color : #FF420E or rgba(255, 66, 14, 1)
 */
-/* --- HEADER --- */
 header {
   display: flex;
   justify-content: center;
@@ -49,25 +48,28 @@ header {
   display: flex;
   align-items: center; }
   .header-content .logo {
-    height: 290px;
-    margin-right: 10vw; }
+    height: 200px;
+    margin-right: 360px;
+    margin-top: 70px; }
   .header-content .title {
-    margin-left: 10vw; }
+    text-align: right;
+    margin-top: 120px;
+    margin-left: 145px;
+    margin-right: 1vw; }
     .header-content .title h1, .header-content .title h2 {
       color: white; }
+    .header-content .title h2 {
+      white-space: nowrap; }
 
-/* --- MENU --- */
 .menu {
   z-index: 13;
   display: block;
   margin: 0 auto;
   margin-top: 300px;
   max-width: 1000px;
-  padding: 10px;
-  background-color: rgba(249, 136, 102, 0.85);
-  border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px; }
+  background-color: rgba(249, 136, 102, 0.85); }
   .menu ul {
+    padding: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center; }
@@ -85,15 +87,13 @@ header {
 #selected-tab {
   border-bottom: 3px solid rgba(255, 66, 14, 0.85); }
 
-/* --- CONTENT --- */
 .content {
   display: block;
   margin: 0 auto;
   width: 999.5px;
   height: 500px; }
 
-/* SMALL SCREENS: <700px */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .header-img {
     width: 800px;
     height: 200px; }
@@ -104,17 +104,24 @@ header {
   .header-content {
     height: 200px; }
     .header-content .logo {
+      margin-top: 0;
       height: 190px;
       margin-right: 1vw; }
     .header-content .title {
+      text-align: left;
+      margin-top: 0;
       margin-left: 1vw; }
 
   .menu {
-    margin-top: 195px;
-    border-radius: 0; }
+    margin-top: 195px; }
     .menu ul {
       flex-direction: column; }
       .menu ul li a p {
         font-size: 24px; } }
+@media screen and (max-width: 1000px) and (min-width: 751px) {
+  .header-content .logo {
+    margin-right: 20vw; }
+  .header-content .title {
+    margin-left: 20vw; } }
 
 /*# sourceMappingURL=style.css.map */

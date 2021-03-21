@@ -6,6 +6,7 @@
 body {
   overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
+  //background-color: #fa997c;
 }
 h1 { font-size: 48px; }
 h2 { font-size: 32px; }
@@ -18,7 +19,7 @@ Secondary color : #FF420E or rgba(255, 66, 14, 1)
 */
 
 
-/* --- HEADER --- */
+// --- HEADER ---
 header {
   display: flex;
   justify-content: center;
@@ -44,33 +45,34 @@ header {
   display: flex;
   align-items: center;
   .logo {
-    height: 290px;
-    margin-right: 10vw;
+    height: 200px;
+    margin-right: 360px;
+    margin-top: 70px;
   }
   .title {
-    margin-left: 10vw;
+    text-align: right;
+    margin-top: 120px;
+    margin-left: 145px;
+    margin-right: 1vw;
     h1,h2 {
       color: white;
     }
-    h1 {
-    }
     h2 {
+      white-space: nowrap;
     }
   }
 }
 
-/* --- MENU --- */
+// --- MENU ---
 .menu {
   z-index: 13;
   display: block;
   margin: 0 auto;
   margin-top: 300px;
   max-width: 1000px;
-  padding: 10px;
   background-color: rgba(249, 136, 102, 0.85);
-  border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px;
   ul {
+    padding: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -93,7 +95,7 @@ header {
   border-bottom: 3px solid rgba(255, 66, 14, 0.85);
 }
 
-/* --- CONTENT --- */
+// --- CONTENT ---
 .content {
   display: block;
   margin: 0 auto;
@@ -103,8 +105,11 @@ header {
 }
 
 
-/* SMALL SCREENS: <700px */
-@media screen and (max-width: 700px) {
+
+
+
+// SMALL SCREENS (<750)
+@media screen and (max-width: 750px) {
   .header-img {
     width: 800px;
     height: 200px;
@@ -115,21 +120,35 @@ header {
   .header-content {
     height: 200px;
     .logo {
+      margin-top: 0;
       height: 190px;
       margin-right: 1vw;
     }
     .title {
+      text-align: left;
+      margin-top: 0;
       margin-left: 1vw;
     }
   }
   .menu {
     margin-top: 195px;
-    border-radius: 0;
     ul {
       flex-direction: column;
       li a p {
         font-size: 24px;
       }
+    }
+  }
+}
+
+// Smooth transition between 1000px & 750px
+@media screen and (max-width: 1000px) and (min-width: 751px) {
+  .header-content {
+    .logo {
+      margin-right: 20vw;
+    }
+    .title {
+      margin-left: 20vw;
     }
   }
 }
