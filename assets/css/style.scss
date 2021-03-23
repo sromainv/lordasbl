@@ -89,6 +89,25 @@ header {
           white-space: nowrap;
           font-size: 20px;
         }
+        p:after {
+          z-index: 5;
+          position: relative;
+          -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+        }
+        p:after {
+          bottom: -10px;
+          display: block;
+          height: 3px;
+          width: 0%;
+          content: "";
+          background-color: #ff5d30;
+        }
+        p:hover:after,
+        #selected-tab:before {
+          opacity: 1;
+          width: 100%;
+        }
       }
     }
   }
@@ -96,7 +115,7 @@ header {
 #selected-tab {
   padding: 7px 0 7px 0;
   border-top: 3px solid rgba(0, 0, 0, 0);
-  border-bottom: 3px solid rgba(255, 66, 14, 0.8);
+  border-bottom: 3px solid #ff5d30;
 }
 
 // --- CONTENT ---
@@ -173,11 +192,14 @@ header {
         padding: 0;
         font-size: 22px;
       }
+      li a p:after {
+        bottom: -3px;
+      }
     }
   }
   #selected-tab {
     padding: 0;
     border: none;
-    box-shadow: 0 3px 0 0 rgba(255, 66, 14, 0.8);
+    box-shadow: 0 3px 0 0 #ff5d30;
   }
 }
