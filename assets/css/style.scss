@@ -49,15 +49,15 @@ header {
   display: flex;
   align-items: center;
   .logo {
-    height: 200px;
+    height: 150px;
     margin-right: 360px;
-    margin-left: 20px;
-    margin-top: 70px;
+    margin-left: 25px;
+    margin-top: 120px;
   }
   .title {
     text-align: right;
     margin-top: 130px;
-    margin-left: 145px;
+    margin-left: 165px;
     margin-right: 1vw;
     h1,h2 {
       color: white;
@@ -76,7 +76,6 @@ header {
   max-width: 1000px;
   background-color: rgba(249, 136, 102, 0.85);
   ul {
-    padding: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -86,6 +85,7 @@ header {
         color: black;
         text-decoration: none;
         p {
+          padding: 10px 0 10px 0;
           white-space: nowrap;
           font-size: 20px;
         }
@@ -94,7 +94,9 @@ header {
   }
 }
 #selected-tab {
-  box-shadow: 0 3px 0 0 rgba(255, 66, 14, 0.8);
+  padding: 7px 0 7px 0;
+  border-top: 3px solid rgba(0, 0, 0, 0);
+  border-bottom: 3px solid rgba(255, 66, 14, 0.8);
 }
 
 // --- CONTENT ---
@@ -109,7 +111,23 @@ header {
 
 
 
-
+// Transition (1000> & <750)
+@media screen and (max-width: 1000px) and (min-width: 751px) {
+  .header-content {
+    left: 50%;
+    margin-left: -250px;
+    .logo {
+      height: 150px;
+      margin-top: 0;
+      margin-right: 1vw;
+    }
+    .title {
+      text-align: left;
+      margin-top: 0;
+      margin-left: 1vw;
+    }
+  }
+}
 // Small screens (<750)
 @media screen and (max-width: 750px) {
   h1 {
@@ -136,7 +154,7 @@ header {
     left: 50%;
     margin-left: -200px;
     .logo {
-      height: 180px;
+      height: 100px;
       margin-top: 0;
       margin-right: 1vw;
     }
@@ -149,27 +167,17 @@ header {
   .menu {
     max-width: 800px;
     ul {
+      padding: 3px;
       flex-direction: column;
       li a p {
+        padding: 0;
         font-size: 22px;
       }
     }
   }
-}
-// Transition (1000> & <750)
-@media screen and (max-width: 1000px) and (min-width: 751px) {
-  .header-content {
-    left: 50%;
-    margin-left: -250px;
-    .logo {
-      height: 280px;
-      margin-top: 0;
-      margin-right: 1vw;
-    }
-    .title {
-      text-align: left;
-      margin-top: 0;
-      margin-left: 1vw;
-    }
+  #selected-tab {
+    padding: 0;
+    border: none;
+    box-shadow: 0 3px 0 0 rgba(255, 66, 14, 0.8);
   }
 }
