@@ -79,7 +79,7 @@ header {
     .menu ul li {
       list-style-type: none; }
       .menu ul li a {
-        color: black;
+        color: #1A1A1A;
         text-decoration: none; }
         .menu ul li a p {
           padding: 10px 0 10px 0;
