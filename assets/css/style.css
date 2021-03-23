@@ -52,14 +52,14 @@ header {
   display: flex;
   align-items: center; }
   .header-content .logo {
-    height: 150px;
-    margin-right: 360px;
-    margin-left: 25px;
-    margin-top: 120px; }
+    height: 170px;
+    margin-right: 350px;
+    margin-left: 30px;
+    margin-top: 100px; }
   .header-content .title {
     text-align: right;
-    margin-top: 130px;
-    margin-left: 165px;
+    margin-top: 135px;
+    margin-left: 160px;
     margin-right: 1vw; }
     .header-content .title h1, .header-content .title h2 {
       color: white; }
@@ -132,7 +132,7 @@ header {
   .header-content {
     height: 230px;
     left: 50%;
-    margin-left: -200px; }
+    margin-left: -180px; }
     .header-content .logo {
       height: 100px;
       margin-top: 0;
