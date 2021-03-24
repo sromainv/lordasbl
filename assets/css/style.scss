@@ -51,6 +51,7 @@ header {
   display: flex;
   align-items: center;
   .logo {
+    user-select: none;
     height: 170px;
     margin-right: 350px;
     margin-left: 30px;
@@ -149,6 +150,7 @@ footer {
     align-items: center;
     justify-content: center;
     .footer-logo {
+      user-select: none;
       height: 100px;
       margin-right: 10px;
     }
@@ -167,6 +169,7 @@ footer {
 // --- BACK TO TOP ---
 .back-to-top {
   cursor: pointer;
+  user-select: none;
   z-index: 7;
   position: fixed;
   bottom: 10px;
@@ -250,5 +253,9 @@ footer {
     padding: 0;
     border: none;
     box-shadow: 0 3px 0 0 #F2592E;
+  }
+  .back-to-top {
+    bottom: 5px;
+    right: 10px;
   }
 }
