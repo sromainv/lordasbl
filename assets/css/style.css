@@ -55,14 +55,14 @@ header {
   display: flex;
   align-items: center; }
   .header-content .logo {
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
     height: 170px;
     margin-right: 350px;
     margin-left: 30px;
-    margin-top: 100px; }
+    margin-top: 100px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
   .header-content .title {
     text-align: right;
     margin-top: 135px;
@@ -123,9 +123,21 @@ header {
   border: 1px solid rgba(0, 0, 0, 0); }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  margin: 50px 30px; }
+  margin: 70px 100px; }
+  .content p {
+    font-size: 20px;
+    margin: 15px auto 15px auto; }
+  .content b {
+    color: #2C8582; }
+
+.content-index p:nth-child(1), .content-index p:nth-child(5) {
+  margin: 40px auto 40px auto; }
+
+.content-soutien-jur p:last-child {
+  margin: 40px auto 40px auto; }
+
+.content-soutien-psy {
+  text-align: center; }
 
 footer {
   z-index: 6;
@@ -139,29 +151,31 @@ footer {
     align-items: center;
     justify-content: center; }
     footer .footer .footer-logo {
-      user-select: none;
-      -moz-user-select: none;
+      height: 110px;
+      margin-right: 15px;
       -webkit-user-select: none;
+      -moz-user-select: none;
       -ms-user-select: none;
-      height: 100px;
-      margin-right: 10px; }
+      user-select: none; }
     footer .footer .footer-content {
-      margin-left: 10px; }
+      margin-left: 15px; }
       footer .footer .footer-content p {
         color: #1A1A1A; }
       footer .footer .footer-content p:nth-child(1) {
-        font-size: 24px; }
+        font-size: 22px; }
+      footer .footer .footer-content p:nth-child(4) {
+        font-size: 16px; }
 
 .back-to-top {
   cursor: pointer;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   z-index: 7;
   position: fixed;
   bottom: 10px;
-  right: 15px; }
+  right: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   .back-to-top img {
     width: 45px;
     opacity: 0.9; }
@@ -177,7 +191,10 @@ footer {
     .header-content .title {
       text-align: left;
       margin-top: 0;
-      margin-left: 1vw; } }
+      margin-left: 1vw; }
+
+  .content {
+    margin: 50px; } }
 @media screen and (max-width: 750px) {
   header {
     width: 800px;
@@ -219,6 +236,9 @@ footer {
         font-size: 22px; }
       .menu ul li a p:after {
         bottom: -3px; }
+
+  .content {
+    margin: 30px; }
 
   #selected-tab {
     padding: 0;

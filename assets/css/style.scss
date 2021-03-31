@@ -51,14 +51,14 @@ header {
   display: flex;
   align-items: center;
   .logo {
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
     height: 170px;
     margin-right: 350px;
     margin-left: 30px;
     margin-top: 100px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
   .title {
     text-align: right;
@@ -134,10 +134,34 @@ header {
   border: 1px solid rgba(0, 0, 0, 0);
 }
 .content {
-  //border: 2px solid rgba(0, 255, 0, 0.3); // DEBUG
-  display: flex;
-  flex-direction: column;
-  margin: 50px 30px;
+  margin: 70px 100px;
+  p {
+    font-size: 20px;
+    margin: 15px auto 15px auto;
+  }
+  b {
+    color: #2C8582;
+  }
+}
+// index.html
+.content-index {
+  p:nth-child(1), p:nth-child(5) {
+    margin: 40px auto 40px auto;
+  }
+}
+// soutien-juridique.html
+.content-soutien-jur {
+  p:last-child{
+    margin: 40px auto 40px auto;
+  }
+}
+// soutien-psychologique.html
+.content-soutien-psy {
+  text-align: center;
+}
+// infos-pratiques.html
+.content-infos {
+
 }
 
 // --- FOOTER ---
@@ -153,36 +177,39 @@ footer {
     align-items: center;
     justify-content: center;
     .footer-logo {
-      user-select: none;
-      -moz-user-select: none;
+      height: 110px;
+      margin-right: 15px;
       -webkit-user-select: none;
+      -moz-user-select: none;
       -ms-user-select: none;
-      height: 100px;
-      margin-right: 10px;
+      user-select: none;
     }
     .footer-content {
-      margin-left: 10px;
+      margin-left: 15px;
       p {
         color: #1A1A1A;
       }
       p:nth-child(1){
-        font-size: 24px;
+        font-size: 22px;
+      }
+      p:nth-child(4){
+        font-size: 16px;
       }
     }
   }
 }
 
-// --- BACK TO TOP ---
+// --- Button to top ---
 .back-to-top {
   cursor: pointer;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   z-index: 7;
   position: fixed;
   bottom: 10px;
   right: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   img {
     width: 45px;
     opacity: 0.9;
@@ -206,6 +233,9 @@ footer {
       margin-top: 0;
       margin-left: 1vw;
     }
+  }
+  .content {
+    margin: 50px;
   }
 }
 // Small screens (<750)
@@ -257,6 +287,9 @@ footer {
         bottom: -3px;
       }
     }
+  }
+  .content {
+    margin: 30px;
   }
   #selected-tab {
     padding: 0;
