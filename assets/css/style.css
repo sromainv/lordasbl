@@ -239,6 +239,8 @@ footer {
 
   .content {
     margin: 30px; }
+    .content p {
+      font-size: 18px; }
 
   #selected-tab {
     padding: 0;
