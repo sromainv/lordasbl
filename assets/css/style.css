@@ -126,6 +126,7 @@ header {
 .content {
   margin: 70px 100px; }
   .content .icon {
+    width: 30px;
     height: 30px; }
   .content p {
     font-size: 20px;
