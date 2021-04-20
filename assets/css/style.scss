@@ -8,7 +8,6 @@ html, body {
 }
 body {
   font-family: 'Open Sans', sans-serif;
-  //background-color: rgb(147, 174, 170);
 }
 h1 { font-size: 48px; }
 h2 { font-size: 32px; }
@@ -81,7 +80,7 @@ header {
   display: block;
   margin: 0 auto;
   max-width: 1000px;
-  background-color: rgba(249, 136, 102, 0.85);
+  background-color: #fa997c;
   ul {
     display: flex;
     justify-content: space-evenly;
@@ -167,7 +166,12 @@ header {
 }
 // soutien-psychologique.html
 .content-soutien-psy {
+
+  // style temporaire:
   text-align: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+
 }
 // infos-pratiques.html
 .content-infos {
@@ -198,7 +202,7 @@ footer {
   display: block;
   margin: 0 auto;
   max-width: 1000px;
-  background-color: rgba(249, 136, 102, 0.85);
+  background-color: #fa997c;
   .footer {
     padding: 10px;
     display: flex;

@@ -78,7 +78,7 @@ header {
   display: block;
   margin: 0 auto;
   max-width: 1000px;
-  background-color: rgba(249, 136, 102, 0.85); }
+  background-color: #fa997c; }
   .menu ul {
     display: flex;
     justify-content: space-evenly;
@@ -144,7 +144,9 @@ header {
   margin: 40px auto 40px auto; }
 
 .content-soutien-psy {
-  text-align: center; }
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 150px; }
 
 .content-infos p {
   display: flex;
@@ -167,7 +169,7 @@ footer {
   display: block;
   margin: 0 auto;
   max-width: 1000px;
-  background-color: rgba(249, 136, 102, 0.85); }
+  background-color: #fa997c; }
   footer .footer {
     padding: 10px;
     display: flex;
