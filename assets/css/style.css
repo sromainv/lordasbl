@@ -110,9 +110,9 @@ header {
           width: 100%; }
 
 #selected-tab {
-  padding: 7px 0;
-  border-top: 3px solid rgba(0, 0, 0, 0);
-  border-bottom: 3px solid #F2592E; }
+  padding: 6px 0;
+  border-top: 4px solid rgba(0, 0, 0, 0);
+  border-bottom: 4px solid #F2592E; }
 
 .content-box {
   z-index: 5;
