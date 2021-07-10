@@ -131,7 +131,7 @@ header {
   .content p {
     font-size: 20px;
     margin: 15px auto 15px auto; }
-  .content b {
+  .content b, .content a {
     color: #2C8582; }
   .content .text-spacer {
     height: 50px;
